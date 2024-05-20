@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Hello HBNB! (with flask)
+HBNB (with flask)
 """
 
 from flask import Flask
@@ -12,6 +12,7 @@ def index():
     """returns Hello HBNB!"""
     return 'Hello HBNB!'
 
+
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
     """returns HBNB"""
@@ -19,3 +20,4 @@ def hbnb():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000')
+    
